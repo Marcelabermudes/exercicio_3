@@ -19,14 +19,14 @@
                     <label for="txtNome">Nome</label>
                     <input type="text" name="" id="nome" required maxlength="30">
                     <label for="txtEmail">Email</label>
-                    <input type="text" name="" id="email" required maxlength="30">
+                    <input type="email" name="" id="email" required maxlength="30">
                     <label for="txtSenha">Senha</label>
-                    <input type="text" name="" id="senha" required maxlength="6">
+                    <input type="password" name="" id="senha" required maxlength="6">
                     <label for="txtConfirmarSenha">Confirmar senha</label>
-                    <input type="text" name="" id="confirmarSenha" required maxlength="6">
+                    <input type="password" name="" id="confirmarSenha" required maxlength="6">
                     Idade:
                     <input type="radio" name="idade" id="acima17" value="acima17">
-                    <label for="abaixo17">Acima 17</label><br>
+                    <label for="acima17">Acima 17</label><br> <br>
                     <input type="radio" name="idade" id="abaixo17" value="abaixo17">
                     <label for="abaixo17">Abaixo ou igual 17</label><br>
                 </fieldset>
@@ -34,14 +34,27 @@
                 <fieldset>
                     <legend>2 Perfil</legend>
 
-                        Descrição:
+                    Descrição:
+
+                    <textarea name="txtdescricao" id="descricao" rows="2" cols="20">
+                    </textarea>
+                    Perfil trabalho:
+                    <select name="perfil" id="">
+                        <option value="value">Front-End Developer</option>
+                        <option value="value">Back-End</option>
+                        <option value="value">Full Stack</option>
+                    </select>
+
+                    Interesses:
+                    <input type="checkbox" name="interesses1" id="interesses1" value="Programador">
+                    <label for="interesses1">Programador</label> <br>
+                    <input type="checkbox" name="interesses2" id="interesses2" value="Programador">
+                    <label for="interesses2">Design</label> <br>
+                    <input type="checkbox" name="interesses3" id="interesses3" value="Programador">
+                    <label for="interesses3">Analista</label>
+                    </label><br>
+
                 </fieldset>
-
-                <br><br>
-
-
-
-
 
                 <button type="submit">Enviar dados</button>
             </form>
